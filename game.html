@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Quizzify</title>
+    <link rel="stylesheet" href="./app.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Multiple Choice Quiz</h1>
+        <p id="welcome-message"></p>
+        <div id="question-box"></div>
+        <button id="submit-btn">Submit Quiz</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const username = localStorage.getItem("username");
+            if (username) {
+                document.getElementById("welcome-message").innerText = `Hello, ${username}! Get ready for your quiz.`;
+            } else {
+                window.location.href = "index.html"; // Redirect to login if user is not logged in
+            }
+        });
+    </script>
+</body>
+
+</html>

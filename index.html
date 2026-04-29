@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Start A quiz</h1>
+    <div id="quiz-container" class="container">
+
+        <button id="theme-toggle"><span id="theme-icon">🌙</span></button>
+
+
+        <div id="hud">
+            <div id="hud-item">
+                <div class="hud-prefix">Time</div>
+                <div id="timer" class="hud-main-text">05:00</div>
+            </div>
+            <div id="hud-item">
+                <div class="hud-prefix">Answer The Question</div>
+            </div>
+            <div id="score-display">
+                <p id="total-score">Total score: 15</p>
+                <p id="current-score">Your score: 0</p>
+            </div>
+
+        </div>
+        <h2 id="question">What is the capital of Country M?</h2>
+        <div id="choices" class="choice-container">
+            <button class="btn">City A</button>
+            <button class="btn">City B</button>
+            <button class="btn">City C</button>
+            <button class="btn">City D</button>
+        </div>
+        <div id="progress-container">
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
+            <p id="progress-text">0 of 15</p>
+        </div>
+
+        <div id="timer-text" class="timer-text"></div>
+        <button id="restart-btn" class="btn hidden">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
